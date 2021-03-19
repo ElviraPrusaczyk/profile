@@ -22,34 +22,23 @@ p {
 }
 
 .spacer {
-  flex: 11;
+  flex: 25;
 }
 
 .toolbar {
-  position: absolute;
+  position: fixed;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 25px;
   display: flex;
-  align-items: center;
   background-color: #51007c;
-  color: #ffe579;
-  font-weight: 600;
+  color: #f7f3df;
 }
 
-.toolbar #twitter-logo,
-.toolbar #google-scholar{
-  height: 40px;
-  margin: 0 8px;
-}
-
-.toolbar #twitter-logo:hover,
-.toolbar #google-scholar:hover{
-  opacity: 0.8;
-}
-
-.content {
+.main-content {
+  position: relative;
   display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
@@ -58,61 +47,16 @@ p {
   align-items: center;
 }
 
-a,
-a:visited,
-a:hover {
-  color: #2a87e2;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #2a87e2;
-}
-
 .footer {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
+  position: fixed;
+  padding-bottom: 10px;
+  bottom: 0px;
 }
-
-.footer a {
-  display: flex;
-  align-items: center;
-}
-
-.github-star-badge {
-  color: #ecec08;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  padding: 3px 10px;
-  border: 1px solid rgba(27,31,35,.2);
-  border-radius: 3px;
-  background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-  margin-left: 4px;
-  font-weight: 600;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-}
-
-.github-star-badge:hover {
-  background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-  border-color: rgba(27,31,35,.35);
-  background-position: -.5em;
-}
-
-.github-star-badge .material-icons {
-  height: 16px;
-  width: 16px;
-  margin-right: 4px;
-}
-
-
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
 
-  .card-container > *:not(.circle-link) ,
+  .card-container > *:not(.circle-link),
   .terminal {
     width: 100%;
   }
