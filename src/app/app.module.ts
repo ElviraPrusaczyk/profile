@@ -10,22 +10,10 @@ import { ContactComponent } from './profile/contact/contact.component';
 import { TeachingComponent } from './profile/teaching/teaching.component';
 import { AboutComponent } from './profile/about/about.component';
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component';
-import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './profile/home/home.component';
 import { PresentationsComponent } from './profile/presentations/presentations.component';
 import { ProfileComponent } from './profile/profile.component';
-
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'research', component: ResearchComponent },
-  { path: 'publications', component: PublicationsComponent },
-  { path: 'presentations', component: PresentationsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'teaching', component: TeachingComponent },
-];
 
 @NgModule({
   declarations: [
@@ -46,7 +34,6 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
