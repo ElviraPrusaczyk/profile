@@ -3,16 +3,14 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 
 :root {
-  /* Colors */
+  /* Background Colors */
   --background-default: #ffffff;
   --background-secondary: #fdfdfd;
-
   --background-card-default: #2e4125;
-
   --background-default-toolbar: #31623a;
 
   /* Shadows */
-  --background-tertiary-shadow: 0 1px 3px 0 rgba(92, 125, 153, 0.5);
+  --background-tertiary-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 
   /* Fonts */
   --h1-size: 3.5rem;
@@ -26,18 +24,23 @@
   --p1-size: 2rem;
   --p1-weight: 300;
   --p1-spacing: 0px;
+
+  --a-hover: #00ffff;
 }
 
 html,
 body {
+  background: var(--background-default);
+  background-tertiary-shadow: var(--background-tertiary-shadow);
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  box-shadow: black;
+  border-color: var(--background-tertiary-shadow);
 }
 
-body {
-  background: var(--background-default);
-  background-repeat: no-repeat;
+a:hover {
+  color: var(--a-hover);
+  text-decoration: none;
 }
 
 h1 {

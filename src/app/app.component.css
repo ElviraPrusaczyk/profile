@@ -1,10 +1,9 @@
 :host {
   font-family: PMingLiU-ExtB, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
-  color: #280000;
-  box-sizing: border-box;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: auto;
 }
 
 h1,
@@ -20,18 +19,6 @@ h6 {
   flex: 25;
 }
 
-.toolbar {
-  position: fixed;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 25px;
-  display: flex;
-  background-color: var(--background-default-toolbar);
-  color: #f7f3df;
-}
-
 .main-content {
   position: relative;
   display: flex;
@@ -41,15 +28,12 @@ h6 {
   max-height: 1000px;
   flex-direction: column;
   align-items: center;
-
 }
-
-
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
 
-  .card-container > *:not(.circle-link),
+  .main-content > *:not(.circle-link),
   .terminal {
     width: 100%;
   }
