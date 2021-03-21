@@ -16,11 +16,6 @@ h6 {
   margin: 8px 0;
 }
 
-p {
-  margin: 0;
-  padding-top: 1000px;
-}
-
 .spacer {
   flex: 25;
 }
@@ -33,7 +28,7 @@ p {
   right: 0;
   height: 25px;
   display: flex;
-  background-color: #51007c;
+  background-color: var(--background-default-toolbar);
   color: #f7f3df;
 }
 
@@ -42,16 +37,14 @@ p {
   display: flex;
   margin: 82px auto 32px;
   padding: 0 16px;
-  max-width: 960px;
+  max-width: 1000px;
+  max-height: 1000px;
   flex-direction: column;
   align-items: center;
+
 }
 
-.footer {
-  position: fixed;
-  padding-bottom: 10px;
-  bottom: 0px;
-}
+
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {

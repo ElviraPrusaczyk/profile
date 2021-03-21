@@ -1,22 +1,38 @@
 <!-- Highlight Card -->
-<div class="highlight-card">
-  <img id="profile-pic" src="{{this.profilePicSrc}}">
-  <div class="card-body">
+  <div class="highlight-card profile modal-content text-left">
+    <img class="card-img-top img-circle profile-pic" src="{{this.profilePicSrc}}">
+    <div class="card-body">
 
-    <h1 class="card-title"> {{this.fullName}} </h1>
-    <h2 class="card-title"> {{this.occupations}} </h2><br>
+      <div class="container-fluid ">
 
-    <p class="card-text">
-      Welcome to my website! I am a PhD candidate currently completing my degree in Social Psychology at Brock
-      University,
-      St. Catharines, Ontario, Canada.
+        <h1 class="card-title"> {{this.fullName}} </h1>
+        <h2 class="card-title"> {{this.occupations[0]}} </h2>
+        <h2 class="card-title"> {{this.occupations[1]}} </h2>
+        <h2 class="card-title"> {{this.occupations[2]}} </h2>
 
-      I am proficient in research design, data analysis and interpretation, and scientific dissemination.
-      As an intergroup researcher, I have expertise in sexism, including intersections related to race, sexual
-      orientation, and gender
-      expression.
-    </p>
 
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <br>
+        <div class="col-lg-10">
+          <button [ngClass]="'btn btn-primary'"
+                  type="submit"
+                  (click)="submit()">
+            My Website
+          </button>
+        </div>
+        <br>
+        <br>
+
+        <div class="col-lg-10">
+          <button [ngClass]="'btn btn-primary'"
+                  type="submit"
+                  (click)="submit()">
+            My Blog
+          </button>
+        </div>
+
+
+        <app-social-media-links class = "modal-footer"></app-social-media-links>
+
+      </div>
+    </div>
   </div>
-</div>

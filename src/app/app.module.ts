@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './profile/home/home.component';
 import { PresentationsComponent } from './profile/presentations/presentations.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProfileComponent } from './profile/profile.component';
     NavigationMenuComponent,
     HomeComponent,
     PresentationsComponent,
-    ProfileComponent
+    ProfileComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
