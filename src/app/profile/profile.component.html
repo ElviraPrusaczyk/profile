@@ -1,36 +1,34 @@
 <!-- Highlight Card -->
-  <div class="highlight-card modal-content text-center">
-    <img class="card-img-top img-circle profile-pic" src="{{this.profilePicSrc}}">
-    <div class="card-body">
+<div class="container-fluid highlight-card modal-content text-center">
+  <img class="card-img-top img-circle profile-pic " src="{{this.profilePicSrc}}">
 
-      <div class="container-fluid ">
-
-        <h1 class="card-title"> {{this.fullName}} </h1>
-        <h2 class="card-title"> {{this.occupations[0]}} </h2>
-        <h2 class="card-title"> {{this.occupations[1]}} </h2>
-        <h2 class="card-title"> {{this.occupations[2]}} </h2>
-
-
-        <br>
-        <div>
-          <button [ngClass]="'btn btn-primary'"
-                  type="submit"
-                  (click)="submit()">
-            My Website
-          </button>
-        </div>
-        <br>
-
-          <button [ngClass]="'btn btn-primary bottom'"
-                  type="submit"
-                  (click)="submit()">
-            My Blog
-          </button>
-        <br>
-        <br>
-
-        <app-social-media-links></app-social-media-links>
-
-      </div>
+  <br>
+  <br>
+  <div class="card-body">
+    <div class="card-title">
+      <h2> {{this.occupations[0]}} </h2>
+      <h2> {{this.occupations[1]}} </h2>
+      <h2> {{this.occupations[2]}} </h2>
+      <h1> {{this.fullName}} </h1>
+      <app-social-media-links></app-social-media-links>
     </div>
+
+
+
+    <button id ="my-blog"
+            [ngClass]="'btn btn-primary'"
+            type="submit"
+            (click)="submit()">
+      My Blog
+    </button>
+
+    <button id = "my-website"
+            [ngClass]="'btn btn-primary'"
+            type="submit"
+            (click)="submit()"
+            title="My Website">
+      My Website
+    </button>
+
   </div>
+</div>

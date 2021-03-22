@@ -10,17 +10,19 @@ export class ProfileComponent implements OnInit {
   firstName = 'Elvira';
   lastName = 'Prusaczyk';
   fullName = this.firstName  + ' ' +  this.lastName;
+
   industry = 'Social Psychology';
   occupations: Array<string> = ['RESEARCH SCIENTIST', 'WRITER', 'PHD CANDIDATE'];
   profilePicSrc = 'assets/images/MyProfilePic.jpg';
   buttonMyWebsite = 'My Website';
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
   submit(): void {
     console.log(this.buttonMyWebsite + 'Button submitted');
   }
+
 }
