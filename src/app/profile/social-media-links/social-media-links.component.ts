@@ -10,7 +10,6 @@ export class SocialMediaLinksComponent implements OnInit {
   brockEmail = 'mailto:ep15je@brocku.ca';
   googleScholar = 'https://scholar.google.ca/citations?user=hIYIRIMAAAAJ&hl=en';
   orcid = 'http://orcid.org/0000-0003-0252-4978';
-  hodsonLab = 'http://www.hodsonlab.com/';
   twitter = 'https://twitter.com/elviraprusaczyk';
   womenHealthAward = 'https://brocku.ca/brock-news/2018/08/brock-grad-student-wins-provincial-womens-health-award/';
   interGroupLab = 'https://brocku.ca/intergroup-lab/people/';

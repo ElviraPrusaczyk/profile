@@ -3,6 +3,9 @@
   position: fixed;
   padding-bottom: 10px;
   bottom: 0px;
-  height: 200px;
+}
 
+a,
+p {
+  font-size: var(--p2-size);
 }

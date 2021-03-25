@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+/*@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");*/
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 :root {
   /* Background Colors */
@@ -19,12 +20,16 @@
 
   --h2-size: 1.5rem;
 
-  --p1-size: 2rem;
+  --p1-size: 1.7rem;
   --p1-weight: 300;
   --p1-spacing: 0px;
 
+  --p2-size: 1.1rem;
+  --p2-weight: 300;
+  --p2-spacing: 0px;
+
   --a-font-size: 1.6rem;
-  --a-hover: #2bf308;
+  --a-hover: #4678f6;
 }
 
 html,
@@ -36,8 +41,6 @@ body {
   box-shadow: black;
   border-color: var(--background-tertiary-shadow);
 }
-
-
 
 a:hover {
   color: var(--a-hover);

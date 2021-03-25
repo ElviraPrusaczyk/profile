@@ -1,11 +1,35 @@
+<div class="mat-form-field-flex" role="main">
 
-<app-profile></app-profile>
-<div class="container-fluid" role="main">
+  <mat-sidenav-container>
 
-  <router-outlet></router-outlet>
+    <mat-sidenav #sidenav role="navigation">
 
+      <app-profile></app-profile>
+    </mat-sidenav>
 
-  <app-footer></app-footer>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <div>
+
+          <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+
+        </div>
+        <div><a routerLink="/">LOGO</a></div>
+
+      </mat-toolbar>
+
+      <main>
+        <app-header></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
 
+<button mat-icon-button (click)="sidenav.toggle()">
+  <mat-icon>menu</mat-icon>
+</button>
 
